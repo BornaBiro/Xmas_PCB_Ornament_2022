@@ -197,13 +197,15 @@
 <wire x1="1.5875" y1="57.15" x2="1.5875" y2="61.2775" width="0.3048" layer="157"/>
 <wire x1="29.21" y1="29.5275" x2="-1.27" y2="-0.9525" width="0.3048" layer="157"/>
 <wire x1="-1.27" y1="-0.9525" x2="-1.27" y2="-1.905" width="0.3048" layer="157"/>
-<wire x1="5.3975" y1="44.1325" x2="54.2925" y2="44.1325" width="4" layer="158"/>
-<wire x1="4.7625" y1="14.9225" x2="53.6575" y2="14.9225" width="4" layer="158"/>
-<wire x1="5.3975" y1="44.1325" x2="54.2925" y2="44.1325" width="4" layer="159"/>
-<wire x1="4.445" y1="14.9225" x2="53.6575" y2="14.9225" width="4" layer="159"/>
+<wire x1="2.8575" y1="44.1325" x2="55.5625" y2="44.1325" width="4" layer="158"/>
+<wire x1="2.8575" y1="14.9225" x2="55.245" y2="14.9225" width="4" layer="158"/>
+<wire x1="2.54" y1="44.1325" x2="55.88" y2="44.1325" width="4" layer="159"/>
+<wire x1="3.175" y1="14.9225" x2="55.245" y2="14.9225" width="4" layer="159"/>
 <text x="29.21" y="1.905" size="0.8128" layer="159" font="vector" rot="MR0" align="center">Borna Biro
 5.12.2022.</text>
 <text x="29.21" y="20.955" size="5.08" layer="159" font="vector" rot="MR0" align="center">Merry Xmas!</text>
+<text x="29.21" y="50.165" size="3" layer="158" align="center">Merry Xmas!</text>
+<text x="29.5275" y="8.255" size="2.5" layer="158" align="center">Ho-Ho-Ho!</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -551,7 +553,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="jlcpcb-2layers">
+<designrules name="jlcpcb-2layers *">
 <description language="en">&lt;b&gt;JLCPCB design rules (2 layers)&lt;/b&gt;
 &lt;ul&gt;
 &lt;li&gt;Board thickness: 1.6mm&lt;/li&gt;
@@ -611,7 +613,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="0.6mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -858,7 +860,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="32.9175" y1="33.3375" x2="32.9175" y2="35.56" width="0.3048" layer="1"/>
 <wire x1="32.9175" y1="35.56" x2="32.9175" y2="35.7925" width="0.3048" layer="1"/>
 <wire x1="32.9175" y1="35.7925" x2="32.8325" y2="35.8775" width="0.3048" layer="1"/>
-<wire x1="54.325" y1="28.66" x2="54.325" y2="20.67" width="0.3048" layer="1"/>
+<wire x1="54.325" y1="28.66" x2="54.325" y2="20.9875" width="0.3048" layer="1"/>
 <wire x1="35.7925" y1="3.09" x2="30.125" y2="3.09" width="0.3048" layer="1"/>
 <wire x1="35.7925" y1="3.09" x2="43.5825" y2="10.88" width="0.3048" layer="1"/>
 <wire x1="30.125" y1="3.09" x2="28.77" y2="4.445" width="0.3048" layer="1"/>
@@ -896,8 +898,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="22.86" y1="33.655" x2="23.8125" y2="34.6075" width="0.3048" layer="1"/>
 <wire x1="23.8125" y1="34.6075" x2="25.9325" y2="34.6075" width="0.3048" layer="1"/>
 <wire x1="25.9325" y1="34.6075" x2="27.2025" y2="33.3375" width="0.3048" layer="1"/>
-<wire x1="54.325" y1="20.67" x2="46.99" y2="13.335" width="0.3048" layer="1"/>
-<wire x1="46.0375" y1="13.335" x2="46.99" y2="13.335" width="0.3048" layer="1"/>
+<wire x1="54.325" y1="20.9875" x2="46.6725" y2="13.335" width="0.3048" layer="1"/>
+<wire x1="46.0375" y1="13.335" x2="46.6725" y2="13.335" width="0.3048" layer="1"/>
 <wire x1="43.5825" y1="10.88" x2="46.0375" y2="13.335" width="0.3048" layer="1"/>
 <wire x1="46.075" y1="10.88" x2="43.5825" y2="10.88" width="0.3048" layer="1"/>
 <contactref element="TP7" pad="TP"/>
@@ -980,10 +982,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="N$7">
 <contactref element="D1" pad="DO"/>
 <contactref element="D2" pad="DI"/>
-<wire x1="46.075" y1="11.98" x2="47.0275" y2="11.98" width="0.3048" layer="1"/>
-<wire x1="55.8375" y1="20.79" x2="47.0275" y2="11.98" width="0.3048" layer="1"/>
+<wire x1="46.075" y1="11.98" x2="46.3925" y2="11.98" width="0.3048" layer="1"/>
+<wire x1="55.8375" y1="21.425" x2="46.3925" y2="11.98" width="0.3048" layer="1"/>
 <wire x1="55.8375" y1="28.3425" x2="56.155" y2="28.66" width="0.3048" layer="1"/>
-<wire x1="55.8375" y1="28.3425" x2="55.8375" y2="20.79" width="0.3048" layer="1"/>
+<wire x1="55.8375" y1="28.3425" x2="55.8375" y2="21.425" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="D2" pad="DO"/>
